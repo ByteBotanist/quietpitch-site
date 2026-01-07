@@ -1,20 +1,20 @@
 // components/Features.tsx
 const features = [
   {
-    title: "Multi-currency FX with clear refresh badges",
-    body: "Let clients see markets in the currency that matters to them—USD, GBP, EUR and more. Free and Basic plans include a small ‘Daily FX’ badge for transparency. Pro and Enterprise refresh FX hourly or by the minute and remove the badge for a cleaner, real-time experience.",
+    title: "Multi-currency views with built-in transparency",
+    body: "Let clients see markets in the currency that matters to them—USD, GBP, EUR, and more. Refresh badges clearly show when FX data was last updated, building trust without clutter.",
   },
   {
-    title: "What-if tools that make returns feel real",
-    body: "Quiet Pitch shows more than lines on a chart. Visitors can plug in a dollar amount and timeframe so prospects see what a real investment could have looked like over that period.",
+    title: "What-if tools that turn charts into conversations",
+    body: "Prospects can plug in a dollar amount and timeframe to see what a real investment could have looked like—helping you explain outcomes instead of defending numbers.",
   },
   {
-    title: "Private investments alongside public markets",
-    body: "Highlight private funds, deals, or models with your own return history. Private market data sits right next to stocks, ETFs, and crypto so clients see the full picture of how you allocate.",
+    title: "Default positions that reflect your strategy",
+    body: "Decide what appears first—no empty charts, no generic tickers. Every visitor sees markets through your lens, not a default watchlist, letting you control the narrative from the first second.",
   },
   {
-    title: "Simple to share, easy to understand",
-    body: "Use your Quiet Pitch link in emails, newsletters, webinars, or social posts to spark conversations with prospects—without sending them to a noisy third-party site.",
+    title: "Designed to share, built to generate interest",
+    body: "Share your Quiet Pitch link in emails, newsletters, webinars, or social posts. Prospects explore your thinking without being sent to noisy third-party sites.",
   },
 ];
 
