@@ -14,9 +14,9 @@ export default function Hero() {
             </span>
           </h1>
           <p className="mt-4 text-sm md:text-base text-white/80 max-w-xl">
-            Quiet Pitch gives financial advisors a clean, branded market page
-            they can share with prospects—complete with charts, multi-currency views,
-            and a built-in “Contact Advisor” button that turns interest into leads.
+            Quiet Pitch gives financial advisors a clean, branded market page they can share 
+            instantly—no logins or signups—complete with charts, multi-currency views, and a 
+            built-in “Contact Advisor” button that turns interest into leads.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
