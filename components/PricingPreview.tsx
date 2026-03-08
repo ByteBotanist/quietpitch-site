@@ -3,39 +3,36 @@ import Link from "next/link";
 
 const tiers = [
   {
-    name: "Free trial (14 days)",
-    price: "$0",
-    subtitle: "Start with a single advisor page and real market data before you decide.",
+    name: "Free Access",
+    title: "Currently free",
+    subtitle: "Use Quiet Pitch now while features continue to improve.",
     items: [
-      "1 advisor page",
-      "Up to 10 leads total",
-      "Up to 1,000 page views",
-      "No payment information required.",
+      "Create your public advisor page",
+      "Use real market data",
+      "Receive inbound interest",
+      "No payment required",
     ],
     highlight: false,
   },
   {
-    name: "Basic",
-    price: "$19/mo*",
-    subtitle: "For solo advisors testing digital outreach.",
+    name: "Help Shape Quiet Pitch",
+    title: "Your feedback matters",
+    subtitle: "Early users help determine what gets built next.",
     items: [
-      "1–2 pages (slugs)",
-      "Up to 25 leads / month",
-      "Up to 2,000 page views",
-      "Daily FX refresh badge",
-      "Email support only",
+      "Suggest features",
+      "Share advisor workflow needs",
+      "Influence roadmap decisions",
     ],
-    highlight: true,
+    highlight: false,
   },
   {
-    name: "Pro / Enterprise",
-    price: "Coming soon",
-    subtitle: "For teams that need higher limits and white-labeling.",
+    name: "Founding Access",
+    title: "Reserved early benefits",
+    subtitle: "Early adopters will receive priority as Quiet Pitch evolves.",
     items: [
-      "More pages & leads",
-      "Higher monthly page views",
-      "Hourly / minute-by-minute FX (no badge)",
-      "Priority and dedicated support options",
+      "Priority feature access",
+      "Founding-user consideration",
+      "Future pricing priority",
     ],
     highlight: false,
   },
@@ -47,13 +44,12 @@ export default function PricingPreview() {
     <section className="mt-16" id="pricing-preview">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-sky-100">
-          Pricing that grows with your practice.
+          Early access while Quiet Pitch evolves.
         </h2>
         <p className="mt-2 text-xs md:text-sm text-white/70 max-w-2xl">
-          We’re finalizing plans for launch. During early access, you’ll lock in founding-member 
-          pricing and the chance to use Quiet Pitch before anyone else. You’ll be part of the private 
-          beta and receive exclusive benefits—even if you unenroll and come back later, you’ll still 
-          be treated as a founding member.”
+          Quiet Pitch is currently free while I work directly with early users,
+          learn what advisors and market professionals actually need,
+          and refine the product before broader launch.
         </p>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
           {tiers.map((t) => (
@@ -64,7 +60,7 @@ export default function PricingPreview() {
               }`}
             >
               <h3 className="text-sm font-semibold text-slate-300">{t.name}</h3>
-              <p className="mt-2 text-xl font-semibold text-sky-50">{t.price}</p>
+              <p className="mt-2 text-xl font-semibold text-sky-50">{t.title}</p>
               <p className="mt-1 text-xs text-white/70">{t.subtitle}</p>
               <ul className="mt-4 space-y-1 text-xs text-white/75">
                 {t.items.map((item) => (
@@ -80,9 +76,6 @@ export default function PricingPreview() {
             </div>
           ))}
         </div>
-        <p className="mt-3 text-[11px] text-white/60">
-          *Indicative pricing. Final pricing and limits may be adjusted before launch.
-        </p>
       </div>
     </section>
   );
