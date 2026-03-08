@@ -52,6 +52,10 @@ export default function AdvisorAgreementPage() {
           </p>
 
           <p>
+            Quiet Pitch may currently be offered without charge during an early-access period,
+            but platform terms still apply to all usage.</p>
+
+          <p>
             Continued use of Quiet Pitch constitutes acceptance of this agreement.
           </p>
         </div>
