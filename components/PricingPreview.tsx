@@ -71,7 +71,7 @@ export default function PricingPreview() {
                 href="/early-access"
                 className="mt-5 inline-flex items-center justify-center rounded-xl bg-blue-500 hover:bg-blue-400 text-xs font-semibold px-4 py-2"
               >
-                Join early access
+                Request access
               </Link>
             </div>
           ))}
