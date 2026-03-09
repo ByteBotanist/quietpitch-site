@@ -6,6 +6,7 @@ import Link from "next/link";
 
 export default function EarlyAccessForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "done" | "error">("idle");
+  const [handleStatus, setHandleStatus] = useState<"idle" | "checking" | "available" | "taken">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -24,9 +25,7 @@ export default function EarlyAccessForm() {
         firmName: (data.firmName as string) || "",
       };
 
-      const res = await fetch(
-        "https://quietpitch-funcapp-axfccbhygagpbkdw.eastus-01.azurewebsites.net/api/signup",
-        {
+      const res = await fetch("/api/early-access",{
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -46,6 +45,21 @@ export default function EarlyAccessForm() {
       setStatus("error");
     }
   }
+
+  async function checkHandle(handle: string) {
+  if (!handle) return;
+
+  setHandleStatus("checking");
+
+  try {
+    const res = await fetch(`/api/check-handle?handle=${handle}`);
+    const data = await res.json();
+
+    setHandleStatus(data.available ? "available" : "taken");
+  } catch {
+    setHandleStatus("idle");
+  }
+}
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 mt-6 max-w-md">
@@ -82,12 +96,25 @@ export default function EarlyAccessForm() {
           id="handle"
           name="handle"
           required
-          pattern="[a-zA-Z0-9-]+"
+          pattern="[a-z0-9-]+"
+          onBlur={(e) => checkHandle(e.target.value)}
           className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
         />
         <p className="mt-1 text-[11px] text-slate-400">
-          This becomes your Quiet Pitch page address, no spaces please.
+          Your public page address (example: quietpitch.com/oakbridge). Use lowercase letters, numbers, and hyphens only.
         </p>
+
+        {handleStatus === "checking" && (
+          <p className="text-[11px] text-slate-400 mt-1">Checking handle...</p>
+        )}
+
+        {handleStatus === "available" && (
+          <p className="text-[11px] text-emerald-400 mt-1">Handle available</p>
+        )}
+
+        {handleStatus === "taken" && (
+          <p className="text-[11px] text-red-400 mt-1">Handle already taken</p>
+        )}
       </div>
 
       <div>
