@@ -86,7 +86,7 @@ export default function EarlyAccessForm() {
           className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
         />
         <p className="mt-1 text-[11px] text-slate-400">
-          This becomes your Quiet Pitch page address.
+          This becomes your Quiet Pitch page address, no spaces please.
         </p>
       </div>
 
