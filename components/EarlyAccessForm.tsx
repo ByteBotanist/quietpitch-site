@@ -86,7 +86,6 @@ export default function EarlyAccessForm() {
           required
           pattern="[a-zA-Z0-9-]+"
           className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
-          placeholder="calebwealth"
         />
         <p className="mt-1 text-[11px] text-slate-400">
           This becomes your Quiet Pitch page address.
