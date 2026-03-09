@@ -23,7 +23,7 @@ export default function Hero() {
               href="/early-access"
               className="inline-flex items-center justify-center rounded-xl bg-blue-500 hover:bg-blue-400 text-sm font-semibold px-5 py-2.5"
             >
-              Join early access
+              Request access
             </Link>
             <a
               href="#demo"
