@@ -58,7 +58,6 @@ export default function EarlyAccessForm() {
           name="name"
           required
           className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
-          placeholder="Jane Advisor"
         />
       </div>
 
@@ -72,7 +71,6 @@ export default function EarlyAccessForm() {
           type="email"
           required
           className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
-          placeholder="you@firm.com"
         />
       </div>
 
@@ -100,7 +98,6 @@ export default function EarlyAccessForm() {
           id="firmName"
           name="firmName"
           className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
-          placeholder="Oakbridge Wealth Management"
         />
       </div>
 
