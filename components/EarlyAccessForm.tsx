@@ -35,8 +35,16 @@ export default function EarlyAccessForm() {
       );
 
       if (!res.ok) {
-        throw new Error("Signup failed");
+        const message = await res.text();
+
+      if (message.includes("Handle already taken")) {
+        setHandleStatus("taken");
+        setStatus("idle");
+        return;
       }
+
+      throw new Error(message);
+    }
 
       form.reset();
       setStatus("done");
