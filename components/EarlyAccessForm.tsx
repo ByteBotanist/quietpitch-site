@@ -23,6 +23,7 @@ export default function EarlyAccessForm() {
         email: data.email as string,
         handle: data.handle as string,
         firmName: (data.firmName as string) || "",
+        regulatoryStatus: data.regulatoryStatus as string
       };
 
       const res = await fetch("/api/early-access",{
@@ -124,6 +125,18 @@ export default function EarlyAccessForm() {
           <p className="text-[11px] text-red-400 mt-1">Handle already taken</p>
         )}
       </div>
+
+      <select
+        name="regulatoryStatus"
+        required
+        defaultValue=""
+      >
+        <option value="">Select...</option>
+        <option value="Not registered / Educational">Not registered / Educational</option>
+        <option value="RIA (Registered Investment Adviser)">RIA (Registered Investment Adviser)</option>
+        <option value="Broker-Dealer">Broker-Dealer</option>
+        <option value="Dual Registration">Dual Registration</option>
+      </select>
 
       <div>
         <label className="block text-xs mb-1 text-slate-100" htmlFor="firmName">
