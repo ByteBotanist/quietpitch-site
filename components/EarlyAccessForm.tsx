@@ -126,10 +126,12 @@ export default function EarlyAccessForm() {
         )}
       </div>
 
+      <label className="block mb-2 text-white">Regulatory Status *</label>
       <select
         name="regulatoryStatus"
         required
         defaultValue=""
+        className="w-full rounded-xl border border-white/20 bg-black/20 text-white px-4 py-3"
       >
         <option value="">Select...</option>
         <option value="Not registered / Educational">Not registered / Educational</option>
