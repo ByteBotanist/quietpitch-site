@@ -126,6 +126,17 @@ export default function EarlyAccessForm() {
         )}
       </div>
 
+      <div>
+        <label className="block text-xs mb-1 text-slate-100" htmlFor="firmName">
+          Firm (optional)
+        </label>
+        <input
+          id="firmName"
+          name="firmName"
+          className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
+        />
+      </div>
+
       <label className="block text-xs mb-1 text-slate-100" htmlFor="handlee">Regulatory Status</label>
       <select
         name="regulatoryStatus"
@@ -139,17 +150,6 @@ export default function EarlyAccessForm() {
         <option value="Broker-Dealer">Broker-Dealer</option>
         <option value="Dual Registration">Dual Registration</option>
       </select>
-
-      <div>
-        <label className="block text-xs mb-1 text-slate-100" htmlFor="firmName">
-          Firm (optional)
-        </label>
-        <input
-          id="firmName"
-          name="firmName"
-          className="w-full rounded-lg bg-black/30 border border-white/20 px-3 py-2 text-sm text-slate-100 outline-none focus:border-blue-400"
-        />
-      </div>
 
       <div className="pt-1">
         <label className="flex items-start gap-2 text-xs text-slate-200">
