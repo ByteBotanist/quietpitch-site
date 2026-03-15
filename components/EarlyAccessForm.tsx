@@ -142,7 +142,7 @@ export default function EarlyAccessForm() {
         name="regulatoryStatus"
         required
         defaultValue=""
-        className="w-full rounded-lg border border-white/20 bg-black/20 text-white px-4 py-3"
+        className="w-full rounded-m border border-white/20 bg-black/20 text-white px-4 py-3"
       >
         <option value="">Select...</option>
         <option value="Not registered / Educational">Not registered / Educational</option>
