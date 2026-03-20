@@ -28,7 +28,7 @@ export default function Home() {
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-black/40 aspect-video">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/watch?v=1vqD2c7icyQ"
+                src="https://www.youtube.com/embed/1vqD2c7icyQ?si=A2egncmHqwFI0-A"
                 title="Quiet Pitch Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
