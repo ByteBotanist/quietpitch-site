@@ -32,9 +32,6 @@ export default function Hero() {
               Watch demo
             </a>
           </div>
-          <p className="mt-3 text-xs text-white/60">
-            Pre-launch preview. No credit card. We’ll email you before we open subscriptions.
-          </p>
         </div>
         <div className="hidden md:block">
           <PreviewCarousel />
