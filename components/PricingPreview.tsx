@@ -67,12 +67,12 @@ export default function PricingPreview() {
                   <li key={item}>• {item}</li>
                 ))}
               </ul>
-              <Link
-                href="/early-access"
+              <button
+                disabled
                 className="mt-5 inline-flex items-center justify-center rounded-xl bg-blue-500 hover:bg-blue-400 text-xs font-semibold px-4 py-2"
               >
-                Request access
-              </Link>
+                Temporarily Unavailable
+              </button>
             </div>
           ))}
         </div>

@@ -14,23 +14,24 @@ export default function Hero() {
             </span>
           </h1>
           <p className="mt-4 text-sm md:text-base text-white/80 max-w-xl">
-            Quiet Pitch gives financial advisors a clean, branded market insights page they can share 
-            instantly—no logins or signups—complete with charts, multi-currency views, and a built-in 
-            “Contact Advisor” button that turns interest into leads.
+            
+            Quiet Pitch is currently undergoing infrastructure upgrades and is temporarily unavailable while improvements are being made.
+
+            Thank you for your interest and patience.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link
-              href="/early-access"
+            <button
+              disabled
               className="inline-flex items-center justify-center rounded-xl bg-blue-500 hover:bg-blue-400 text-sm font-semibold px-5 py-2.5"
             >
               Request access
-            </Link>
-            <a
-              href="#demo"
+            </button>
+            <button
+              disabled
               className="inline-flex items-center justify-center rounded-xl border border-white/30 text-sm font-semibold px-5 py-2.5 hover:border-white/60 text-white"
             >
               Watch demo
-            </a>
+            </button>
           </div>
         </div>
         <div className="hidden md:block">

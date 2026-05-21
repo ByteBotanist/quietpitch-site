@@ -22,11 +22,11 @@ export default function Navbar() {
           </span>
         </Link>
         <nav className="flex items-center gap-4 text-sm text-white/70">
-          <a href="/#pricing-preview" className="hover:text-blue-200">Early Benefits</a>
-          <Link href="/early-access" className="hover:text-blue-200">Request access</Link>
-          <a href="/#demo" className="hidden md:inline-block hover:text-blue-200">
+          <button disabled className="hover:text-blue-200">Early Benefits</button>
+          <button disabled className="hover:text-blue-200">Request access</button>
+          <button disabled className="hidden md:inline-block hover:text-blue-200">
             Watch demo
-          </a>
+          </button>
         </nav>
       </div>
     </header>
