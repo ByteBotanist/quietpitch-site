@@ -22,10 +22,10 @@ export default function Navbar() {
           </span>
         </Link>
         <nav className="flex items-center gap-4 text-sm text-white/70">
-          <button disabled className="hover:text-blue-200">Early Benefits</button>
-          <button disabled className="hover:text-blue-200">Request access</button>
+          <button disabled className="hover:text-blue-200">N/A</button>
+          <button disabled className="hover:text-blue-200">N/A</button>
           <button disabled className="hidden md:inline-block hover:text-blue-200">
-            Watch demo
+            N/A
           </button>
         </nav>
       </div>
